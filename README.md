@@ -54,13 +54,13 @@ Ensure the Django backend is running for score saving and leaderboard functional
 
 ## 📸Screenshots
 
-###start screen
+### start screen
 ![Start Screen](screenshots/menu.png)
 
-###gameplay
+### gameplay
 ![Gameplay](screenshots/gameplay.png)
 
-###leaderboard
+### leaderboard
 ![Leaderboard](screenshots/leaderboard.png)
 
 ## 👩‍💻 Developer
