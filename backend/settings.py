@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-bx0dk0%gki@7*e-pygq-ha3#*&iz%b)77fa)16%0z8#8*7@u7(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -129,3 +130,6 @@ MAILERS = {
     },
 }
 CORS_ALLOW_ALL_ORIGINS = True
+STATIC_URL= 'static/'
+STATIC_ROOT=BASE_DIR / 'staticfiles'
+STATICFILES_STORAGE='whitenoise.storage.CompressesManifestStaticFilesStorage'
