@@ -52,6 +52,17 @@ Open `index.html` in your browser to play.
 
 Ensure the Django backend is running for score saving and leaderboard functionality.
 
+## 📸Screenshots
+
+###start screen
+![Start Screen](screnshots/menu.png)
+
+###gameplay
+![Gameplay](screenshots/gameplay.png)
+
+###leaderboard
+![Leaderboard](screenshots/leaderboard.png)
+
 ## 👩‍💻 Developer
 
 **N.V. Sowmya**
