@@ -49,7 +49,7 @@ async function openLeaderboard() {
     closeLeaderboardButton.focus();
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/api/scores/leaderboard/");
+        const response = await fetch("https://balloon-bounce-backend.onrender.com/api/scores/leaderboard/");
         if (!response.ok) throw new Error("Leaderboard request failed");
         const scores = await response.json();
         if (!Array.isArray(scores)) throw new Error("Unexpected leaderboard response");
@@ -1000,7 +1000,7 @@ function popBalloon() {
     balloonPopped = true;
     gameOver      = true;
 
-    fetch("http://127.0.0.1:8000/api/scores/save/", {
+    fetch("https://balloon-bounce-backend.onrender.com/api/scores/save/" ,{
         method:  "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
